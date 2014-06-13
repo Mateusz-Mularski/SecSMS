@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.mmularski.SecSMS"
+          android:versionCode="1"
+          android:versionName="0.1">
+    <uses-sdk android:minSdkVersion="11"
+            android:targetSdkVersion="16"/>
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+
+    <application android:name=".application.MyApp"
+                 android:label="@string/app_name"
+                 android:icon="@drawable/ic_mail"
+                 android:windowSoftInputMode="stateVisible|adjustResize">
+        <activity android:name=".activities.MainActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.mmularski.SecSMS.sms.MessageReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <activity android:name=".activities.MailBoxActivity"
+                  android:label="Mailbox"
+                  android:parentActivityName=".activities.MainActivity">
+        </activity>
+        <activity android:name=".activities.MailsActivity"
+                  android:label="Mails"
+                  android:parentActivityName=".activities.MailBoxActivity">
+        </activity>
+        <activity android:name=".activities.ContactListActivity"
+                  android:label="Contact list"
+                  android:parentActivityName=".activities.MainActivity">
+        </activity>
+        <activity android:name=".activities.ContactActivity"
+                  android:label="Contact"
+                  android:parentActivityName=".activities.ContactListActivity">
+        </activity>
+        <activity android:name=".activities.NewMailActivity"
+                  android:label="New mail"
+                  android:parentActivityName=".activities.MailBoxActivity">
+        </activity>
+        <activity android:name=".activities.SettingsActivity"
+                  android:label="Settings"
+                  android:parentActivityName=".activities.MainActivity">
+        </activity>
+    </application>
+</manifest>

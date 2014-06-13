@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:gravity="center">
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember my passwords"
+            android:id="@+id/rememberPass" android:layout_gravity="center_horizontal"/>
+    <Button
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete passwords"
+            android:id="@+id/deletePass" android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="center">
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete all contacts"
+                android:id="@+id/deleteContacts"/>
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete all messages"
+                android:id="@+id/deleteMessages"/>
+
+    </LinearLayout>
+</LinearLayout>
