@@ -10,6 +10,7 @@ Written and tested on Android 4.3
   <center>
     <img src="http://i.imgur.com/UEgpWpq.png" height="350" align="center" />
     <img src="http://i.imgur.com/CFfH7Yg.png" height="350" align="center" />
+    <img src="http://i.imgur.com/hibUUjZ.png" height="350" align="center" />
     <img src="http://i.imgur.com/ir8Oc5M.png" height="350" align="center" />
     <img src="http://i.imgur.com/Y5Ojbr9.png" height="350" align="center" />
     <img src="http://i.imgur.com/gF6aqHp.png" height="350" align="center" />
