@@ -1,4 +1,4 @@
-##SecSMS
+#SecSMS
 My second app in android written as a project in college.<br />
 This application was written to encrypt our short text messages (SMSs).<br />
 
@@ -20,5 +20,5 @@ Written and tested on Android 4.3
   </center>
 </p>
 
-#To-do list
+##To-do list
 A LOT!
