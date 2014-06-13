@@ -1,6 +1,7 @@
 #SecSMS
 My second app in android written as a project in college.<br />
 This application was written to encrypt our short text messages (SMSs).<br />
+I will try to complete the application in my spare time.<br />
 
 Written and tested on Android 4.3
 
@@ -21,4 +22,10 @@ Written and tested on Android 4.3
 </p>
 
 ##To-do list
-A LOT!
+* add settings to the database
+* handle properly messages containing more than 160 characters
+* make some fancy layout :)
+* connect my "contact list" with default contacts
+* add funcionality to search through all messages in default messagebox for encrypted messages
+* add possibility to change contact image (and save it to the database)
+* and a lot more
